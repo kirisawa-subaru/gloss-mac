@@ -1,6 +1,6 @@
 # Gloss
 
-Gloss 是 Windows 上的英文阅读与写作助手，也支持自适应中英文双向翻译。选中文本，按下快捷键，即可理解、翻译或修正表达。
+Gloss-mac是 Mac 上的英文阅读与写作助手，也支持自适应中英文双向翻译。选中文本，按下快捷键，即可理解、翻译或修正表达。
 
 <p align="center">
   <img src="docs/screenshots/toolbar.png" width="720" alt="Gloss 浮动工具栏">
@@ -26,7 +26,7 @@ Gloss 是 Windows 上的英文阅读与写作助手，也支持自适应中英�
 
 ## 安装
 
-支持 Windows 10/11。前往 [Releases](../../releases) 下载 Windows x64 安装程序，并使用可访问 Codex 的 ChatGPT 账号登录。
+支持 macOS 26。前往 [Releases](../../releases) 下载 dmg 镜像，并使用可访问 Codex 的 ChatGPT 账号登录。
 
 ## 使用
 
