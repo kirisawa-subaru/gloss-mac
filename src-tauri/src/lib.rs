@@ -113,6 +113,14 @@ pub fn run() {
             let mut tray = tauri::tray::TrayIconBuilder::new()
                 .menu(&tray_menu)
                 .tooltip(DEFAULT_SHORTCUT_TOOLTIP);
+            // A separate alpha mask lets macOS choose the menu bar foreground color.
+            #[cfg(target_os = "macos")]
+            {
+                tray = tray
+                    .icon(tauri::include_image!("icons/tray-template.png"))
+                    .icon_as_template(true);
+            }
+            #[cfg(not(target_os = "macos"))]
             if let Some(icon) = app.default_window_icon() {
                 tray = tray.icon(icon.clone());
             }
